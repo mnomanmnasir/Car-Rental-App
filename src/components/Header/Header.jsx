@@ -14,7 +14,7 @@ const navLink = [
         path: '/about',
         display: 'About'
     },
-    
+
     {
         path: '/cars',
         display: 'Cars'
@@ -94,7 +94,7 @@ const Header = () => {
                                 </div>
                             </div>
                         </Col>
-                        <Col lg='2' md='3' sm='0' className='text-end'>
+                        <Col lg='2' md='3' sm='0' className='d-flex align-items-center justify-content-end'>
                             <button className="header_btn btn">
                                 <Link to='/contact'>
                                     <i className="ri-phone-line"></i>
@@ -106,29 +106,30 @@ const Header = () => {
                 </Container>
             </div>
 
-<div className="main_navbar">
-    <Container>
-        <div className="navigation_wrapper d-flex align-items-center justify-content-between">
-            <span className="mobile_menu">
-                <i className="ri-menu-line"></i>
-            </span>
-            <div className="navigation">
-                <div className="menu">
-{
-    navLink.map((item, index)=> (
-        <NavLink to={item.path} key={index}>{item.display}</NavLink>
-    ))
-}
-                </div>
+            <div className="main_navbar">
+                <Container>
+                    <div className="navigation_wrapper d-flex align-items-center justify-content-between">
+                        <span className="mobile_menu">
+                            <i className="ri-menu-line"></i>
+                        </span>
+                        <div className="navigation">
+                            <div className="menu">
+                                {
+                                    navLink.map((item, index) => (
+                                        <NavLink to={item.path} className={navClass=> navClass.isActive ? 'nav_active nav_item' : 'nav_item'} key={index}>{item.display}</NavLink>
+                                    ))
+                                }
+                            </div>
+                        </div>
+                        <div className="nav_right">
+                            <div className="search_box">
+                                <input type="text" placeholder='Search' />
+                                <span><i className="ri-search-line"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </Container>
             </div>
-            <div className="nav_right">
-                <div className="search_box">
-                    <input type="text" placeholder='Search' />
-                </div>
-            </div>
-        </div>
-    </Container>
-</div>
         </header>
     )
 

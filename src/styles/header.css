@@ -76,18 +76,19 @@
     color: #000d6b;
 }
 
-.header_location-content h6{
+.header_location-content h6 {
     font-weight: 600;
 }
 
 
-.header_btn{
+.header_btn {
     background: #000d6b !important;
     padding: 10px 20px;
     border: none;
     outline: none;
     border-radius: 5px;
 }
+
 .header_btn a {
     display: flex;
     align-items: center;
@@ -98,6 +99,67 @@
     font-size: 0.9rem;
 }
 
-.header_btn a:hover{
+.header_btn a:hover {
     color: #fff
+}
+
+
+
+/* ----------- main navbar styles ------------ */
+
+.main_navbar {
+    padding: 15px 0px;
+    background: #000d6b;
+}
+
+.mobile_menu i {
+    color: #fff;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.mobile_menu {
+    display: none;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    column-gap: 2.7rem;
+}
+
+.nav_item {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav_item:hover {
+    color: #f9a826
+}
+
+.search_box {
+    border: 1px solid #7c8a972f;
+    padding: 7px 12px;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    background: #020a4de9;
+}
+
+.search_box input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.search_box span i {
+    color: #fff;
+    cursor: pointer;
+}
+
+.nav_active {
+    color: #f9a826
 }
