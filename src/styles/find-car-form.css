@@ -1,0 +1,20 @@
+.find_cars-left {
+    background: linear-gradient(rgb(249, 168, 38, 0.9), rgb(249, 168, 38, 0.9)), url('../assests//all-images/toyota-offer-2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 65px 35px;
+}
+
+
+.form_group{
+    width: 30%;
+    margin-bottom: 0;
+}
+
+.form_group input{
+    border: 1px solid #7c8a972a;
+    padding: 8px 12px;
+    outline: none;
+}
+
