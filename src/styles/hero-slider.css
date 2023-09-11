@@ -1,18 +1,18 @@
-.slider_item{
+.slider_item {
     max-width: 100%;
     height: 650px;
 }
 
-.slider_item-01{
-    background: linear-gradient(rgb(0, 13, 107,0.5), rgb(0,13,107,0.5)), url('../assests/all-images/slider-img/slider-1.jpg');
+.slider_item-01 {
+    background: linear-gradient(rgb(0, 13, 107, 0.5), rgb(0, 13, 107, 0.5)), url('../assests/all-images/slider-img/slider-1.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 
-.slider_item-02{
-    background: linear-gradient(rgb(0, 13, 107,0.5), rgb(0,13,107,0.5)), url('../assests/all-images/slider-img/slider-2.jpg');
+.slider_item-02 {
+    background: linear-gradient(rgb(0, 13, 107, 0.5), rgb(0, 13, 107, 0.5)), url('../assests/all-images/slider-img/slider-2.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -20,27 +20,27 @@
 
 
 
-.slider_item-03{
-    background: linear-gradient(rgb(0, 13, 107,0.5), rgb(0,13,107,0.5)), url('../assests/all-images/slider-img/slider-3.jpg');
+.slider_item-03 {
+    background: linear-gradient(rgb(0, 13, 107, 0.5), rgb(0, 13, 107, 0.5)), url('../assests/all-images/slider-img/slider-3.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.hero_slider{
+.hero_slider {
     overflow: hidden;
 }
 
-.slider_content{
+.slider_content {
     padding-top: 150px;
 }
 
-.slider_content h1{
+.slider_content h1 {
     font-size: 3.2rem;
     font-weight: 600;
 }
 
-.reserve_btn{
+.reserve_btn {
     background: #fff !important;
     color: #000d6b;
     border: none;
@@ -51,4 +51,5 @@
 .reserve_btn a {
     text-decoration: none;
     font-weight: 600;
+    color: #000
 }

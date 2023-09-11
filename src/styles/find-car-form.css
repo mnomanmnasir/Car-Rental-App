@@ -7,14 +7,75 @@
 }
 
 
-.form_group{
+.find_cars-left h2 {
+    font-weight: 600;
+    font-size: 2.8rem;
+}
+
+.form_group {
     width: 30%;
     margin-bottom: 0;
 }
 
-.form_group input{
+.form_group input {
     border: 1px solid #7c8a972a;
     padding: 8px 12px;
+    width: 100%;
     outline: none;
+    color: #7c8a97;
 }
 
+.form_group input::placeholder {
+    color: #7c8a97;
+
+}
+
+.form {
+    background: #fff;
+    padding: 55px 50px 15px 15px;
+}
+
+.select_group {
+    width: 30%;
+}
+
+.select_group select {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #7c8a972a;
+    outline: none;
+    color: #7c8a97;
+}
+
+.hero_slider-section {
+    position: relative;
+    z-index: 10;
+    margin-bottom: 200px;
+}
+
+.hero_form {
+    position: absolute;
+    bottom: -350px;
+    z-index: 11;
+    width: 100%;
+}
+
+.form_row {
+    background: #fff;
+    box-shadow: 5px 5px 15px -5px #7c8a97;
+}
+
+.journey_time::before {
+    content: 'journey time';
+    margin-right: 0.8rem;
+    color: #7c8a97;
+}
+
+.find_car-btn {
+    background: #000d6b ;
+    color: #fff;
+    padding: 8px 15px;
+    width: 100%;
+    border: none;
+    outline: none;
+}

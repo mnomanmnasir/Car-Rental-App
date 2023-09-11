@@ -89,7 +89,7 @@ const Footer = () => {
                             <h5 className="footer_link-title">
                                 Newsletter
                             </h5>
-                            <p>Subscribe our newsletter</p>
+                            <p className="office_info">Subscribe our newsletter</p>
                             <div className="newsletter">
                                 <input type="email" placeholder='Email' />
                                 <span>
