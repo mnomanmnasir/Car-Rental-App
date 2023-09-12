@@ -5,7 +5,7 @@ import ava02 from '../../assests/all-images/ava-2.jpg'
 import ava03 from '../../assests/all-images/ava-3.jpg'
 import ava04 from '../../assests/all-images/ava-4.jpg'
 
-
+import '../../styles/testimonials.css'
 
 const Testimonials = () => {
 
@@ -71,10 +71,10 @@ const Testimonials = () => {
                 </p>
                 <div className="mt-3 d-flex align-items-center gap-4">
                     <img src={ava03} alt="" className='w-25 h-25 rounded-2' />
-                <div>
-                <h6 className="mb-0 mt-3">Abdul Ahad Mansori</h6>
-                <p className="section_description">MERN Stack Developer</p>
-                </div>
+                    <div>
+                        <h6 className="mb-0 mt-3">Abdul Ahad Mansori</h6>
+                        <p className="section_description">MERN Stack Developer</p>
+                    </div>
                 </div>
             </div>
             <div className="testimonials py-4 px-3">
@@ -83,10 +83,10 @@ const Testimonials = () => {
                 </p>
                 <div className="mt-3 d-flex align-items-center gap-4">
                     <img src={ava04} alt="" className='w-25 h-25 rounded-2' />
-                <div>
-                <h6 className="mb-0 mt-3">Anas Shoaib</h6>
-                <p className="section_description">Graphics Designer</p>
-                </div>
+                    <div>
+                        <h6 className="mb-0 mt-3">Anas Shoaib</h6>
+                        <p className="section_description">Graphics Designer</p>
+                    </div>
                 </div>
             </div>
         </Slider>

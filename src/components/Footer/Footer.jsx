@@ -41,7 +41,7 @@ const Footer = () => {
         <footer className="footer">
             <Container>
                 <Row>
-                    <Col lg='4' md='3' sm='4'>
+                    <Col lg='4' md='4' sm='12'>
                         <div className="logo footer_logo">
                             <h1>
                                 <Link to='/home' className='d-flex align-items-center gap-2'>
@@ -57,7 +57,7 @@ const Footer = () => {
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eveniet repellendus nostrum, beatae cum praesentium reiciendis delectus rem veritatis totam eius cupiditate aspernatur voluptates accusamus, velit vel voluptatibus debitis consectetur.
                         </p>
                     </Col>
-                    <Col lg='2' md='4' sm='6'>
+                    <Col lg='2' md='3' sm='6'>
                         <div className="mb-4">
                             <h5 className="footer_link-title">Quick Links</h5>
 
@@ -99,14 +99,14 @@ const Footer = () => {
                         </div>
                     </Col>
 
-                <Col lg='12'>
-                    <div className="footer_bottom">
-                        <p className="section_description d-flex align-items-center justify-content-center gap-1 pt-4">
-                            <i className="ri-copyright-line"></i>Copyright {year}, 
-                            Developed by Noman Nasir, All Right Reserved
-                        </p>
-                    </div>
-                </Col>
+                    <Col lg='12'>
+                        <div className="footer_bottom">
+                            <p className="section_description d-flex align-items-center justify-content-center gap-1 pt-4">
+                                <i className="ri-copyright-line"></i>Copyright {year},
+                                Developed by Noman Nasir, All Right Reserved
+                            </p>
+                        </div>
+                    </Col>
                 </Row>
             </Container>
         </footer>

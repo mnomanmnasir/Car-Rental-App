@@ -70,5 +70,26 @@
 
 .footer_bottom {
     border-top: 1px solid #7c8a972f;
-    color: rgba(255, 255, 255, 0.715); 
+}
+
+
+@media only screen and (max-width: 768px) {
+    .footer_logo-content {
+        font-size: 0.8rem;
+    }
+
+    .quick_link,
+    .office_info {
+        font-size: 0.8rem;
+        line-height: 1.5rem;
+    }
+
+    .footer_link-title {
+        font-size: 1.1rem;
+        margin-top: 15px;
+    }
+
+    .footer_bottom p {
+        font-size: 0.7rem;
+    }
 }

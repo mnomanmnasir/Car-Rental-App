@@ -27,7 +27,7 @@ const Home = () => {
                 <Container>
                     <Row className="form_row">
                         <Col lg='4' md='4'>
-                            <div className="find_cars-left">
+                            <div className="find_cars-left text-center">
                                 <h2>Find your best cars here</h2>
                             </div>
                         </Col>
@@ -99,8 +99,7 @@ const Home = () => {
             <section>
                 <Container>
                     <Row>
-                        <Col lg='12' className='mb-4 text-center'>
-
+                        <Col lg='12' className='mb-5 text-center'>
                             <h6 className="section_subtitle">Explore our blogs</h6>
                             <h2 className="section_title">Latest Blogs</h2>
                         </Col>

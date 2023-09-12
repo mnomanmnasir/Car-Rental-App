@@ -17,3 +17,33 @@
     color: #fff;
     line-height: 65px;
 }
+
+@media only screen and (max-width: 992px){
+    .become_driver-title{
+        font-size: 1.5rem;
+        line-height: 3rem;
+    }
+}
+
+
+@media only screen and (max-width: 768px){
+    .become_driver{
+        padding: 50px 0px;
+    }
+    .become_driver-title{
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    .become_driver-btn{
+        font-size: 0.8rem !important;
+    }
+}
+
+@media only screen and (max-width: 576px){
+    .become_driver-img{
+        display: none;
+    }
+    .become_driver{
+        text-align: center;
+    }
+}
