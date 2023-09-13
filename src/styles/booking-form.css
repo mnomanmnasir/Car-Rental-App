@@ -1,0 +1,29 @@
+.booking_form {
+    width: 47.5%;
+}
+
+.booking_form input {
+    padding: 8px 15px;
+    border: 1px solid #7c8a972a;
+    width: 100%;
+
+}
+
+.booking_form select,
+.textarea {
+    width: 100%;
+    padding: 10px 15px;
+    color: #7c8a97;
+    border: 1px solid #7c8a972a;
+    border-radius: 4px;
+}
+
+.time_picker::before {
+    content: 'Joureny time';
+    color: #7c8a97;
+    margin-right: 0.5rem;
+}
+
+.textarea:focus, .booking_form input:focus, .booking_form select:focus{
+    outline: none;
+}

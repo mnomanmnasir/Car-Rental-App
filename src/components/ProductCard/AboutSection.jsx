@@ -3,9 +3,11 @@ import { Container, Row, Col } from 'reactstrap'
 import '../../styles/about-section.css'
 import aboutImg from '../../assests/all-images/cars-img/bmw-offer.png'
 
-const AboutSection = () => {
+const AboutSection = ({ aboutClass }) => {
     return (
-        <section className='about_section'>
+        <section className='about_section' style={aboutClass === 'aboutPage' ?
+            { marginTop: "30px" } : { marginTop: "300px" }
+        }>
             <Container>
 
                 <Row>
