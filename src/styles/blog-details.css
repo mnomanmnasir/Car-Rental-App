@@ -1,0 +1,25 @@
+.blog_publisher span i {
+    color: #f9a826
+}
+
+blockquote {
+    line-height: 35px;
+}
+
+.single_comment img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid #000d6b;
+    object-fit: cover;
+}
+
+.replay i {
+    color: #f9a826
+}
+
+.replay {
+    color: #000d6b;
+    font-weight: 600;
+    cursor: pointer;
+}

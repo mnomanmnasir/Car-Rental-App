@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Container, Row, Col } from 'reactstrap'
 import carData from '../assests/data/carData'
 import Helmet from '../components/Helmet/Helmet'
@@ -11,6 +11,11 @@ const CartDetails = () => {
 
     const { slug } = useParams();
     const singleCarItem = carData.find((item) => item.carName === slug)
+
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [singleCarItem])
 
     return (
         <Helmet>
@@ -81,7 +86,7 @@ const CartDetails = () => {
                                 <BookingForm />
                             </div>
                         </Col>
-                        
+
                         <Col lg='5' className='mt-5'>
                             <div className="payment_info mt-5">
                                 <h5 className='mb-4 fw-bold'>
