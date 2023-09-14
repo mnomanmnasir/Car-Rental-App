@@ -1,0 +1,49 @@
+.become_driver {
+    background: linear-gradient(rgba(127, 156, 158, 0.591), rgba(162, 211, 214, 0.591)), url('../assests/all-images/drive.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 80px 0px;
+}
+
+.become_driver button {
+    background: #fff !important;
+    color: black !important;
+    font-weight: 600;
+}
+
+.become_driver-title {
+    font-size: 2.8rem;
+    color: #fff;
+    line-height: 65px;
+}
+
+@media only screen and (max-width: 992px){
+    .become_driver-title{
+        font-size: 1.5rem;
+        line-height: 3rem;
+    }
+}
+
+
+@media only screen and (max-width: 768px){
+    .become_driver{
+        padding: 50px 0px;
+    }
+    .become_driver-title{
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    .become_driver-btn{
+        font-size: 0.8rem !important;
+    }
+}
+
+@media only screen and (max-width: 576px){
+    .become_driver-img{
+        display: none;
+    }
+    .become_driver{
+        text-align: center;
+    }
+}
