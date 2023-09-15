@@ -2,6 +2,7 @@ import React from 'react'
 import { Container, Row, Col, ListGroup, ListGroupItem } from 'reactstrap'
 import { Link } from 'react-router-dom'
 import '../../styles/footer.css'
+import logoImg from '../../assests/all-images/logo.jpg'
 
 
 
@@ -45,9 +46,7 @@ const Footer = () => {
                         <div className="logo footer_logo">
                             <h1>
                                 <Link to='/home' className='d-flex align-items-center gap-2'>
-                                    <i className="ri-car-line">
-                                    </i>
-                                    <span>Rent by Car <br /> Service</span>
+                                <img src={logoImg} alt="" className="mt-1"/>
                                 </Link>
                             </h1>
 
@@ -103,7 +102,7 @@ const Footer = () => {
                         <div className="footer_bottom">
                             <p className="section_description d-flex align-items-center justify-content-center gap-1 pt-4">
                                 <i className="ri-copyright-line"></i>Copyright {year},
-                                Developed by Noman Nasir, All Right Reserved
+                                Developed by Coder Dreamer, All Right Reserved
                             </p>
                         </div>
                     </Col>

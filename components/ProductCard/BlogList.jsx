@@ -1,12 +1,21 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Col } from 'reactstrap'
 import '../../styles/blog-list.css'
 import { Link } from 'react-router-dom'
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import blogData from '../../assests/data/blogData'
 
 
 const BlogList = () => {
+
+    useEffect(() => {
+
+        AOS.init({
+            duration: 950,
+        });
+    })
+
     return (
         <>
             {
@@ -24,7 +33,8 @@ const BlogItem = ({ item }) => {
     return (
         <>
             <Col lg='4' md='6' sm='6' className='mb-5'>
-                <div className="blog_item">
+                <div data-aos="flip-down"
+                    data-aos-delay="100" data-aos-easing="ease-out-cubic" className="blog_item">
                     <img src={imgUrl} alt="" className='w-100' />
                     <div className="blog_info p-3">
                         <Link to={`/blog/${title}`} className='blog_title'>

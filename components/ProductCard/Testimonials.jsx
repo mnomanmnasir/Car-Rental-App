@@ -1,13 +1,23 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Slider from 'react-slick'
 import ava01 from '../../assests/all-images/ava-1.jpg'
 import ava02 from '../../assests/all-images/ava-2.jpg'
 import ava03 from '../../assests/all-images/ava-3.jpg'
 import ava04 from '../../assests/all-images/ava-4.jpg'
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import '../../styles/testimonials.css'
 
 const Testimonials = () => {
+
+
+    useEffect(() => {
+
+        AOS.init({
+            duration: 950,
+        });
+    })
+
 
     const setting = {
         dots: true,

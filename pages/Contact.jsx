@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Helmet from '../components/Helmet/Helmet';
 import CommonSection from '../components/ProductCard/CommonSection';
 import { Container, Row, Col, Form, FormGroup, Input } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import '../styles/contact.css'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 
 const socialLinks = [
@@ -31,6 +34,13 @@ const socialLinks = [
 
 const Contact = () => {
 
+    useEffect(() => {
+
+        AOS.init({
+            duration: 950,
+        });
+    })
+
     return (
         <Helmet title='Contact'>
             <CommonSection title='Contact' />
@@ -39,8 +49,10 @@ const Contact = () => {
 
                 <Row>
                     <Col lg='7' md='7' className='mt-5 mb-5'>
-                        <h6 className="fw-bold fs-2">Get in Touch</h6>
-                        <Form>
+                        <h6 className="fw-bold fs-2" data-aos="fade-right"
+                                data-aos-delay="300" data-aos-easing="ease-out-cubic">Get in Touch</h6>
+                        <Form data-aos="fade-right"
+                                data-aos-delay="600" data-aos-easing="ease-out-cubic">
                             <FormGroup className='contact_form'>
                                 <Input placeholder='Your Name' type='text' />
                             </FormGroup>
@@ -55,7 +67,8 @@ const Contact = () => {
                     </Col>
 
                     <Col lg='5' md='5' className='mt-5 mb-5'>
-                        <div className="contact_info">
+                        <div data-aos="fade-left"
+                                data-aos-delay="400" data-aos-easing="ease-out-cubic" className="contact_info">
                             <h6 className="fw-bold fs-2">Contact Information</h6>
                             <p className="section_description mb-0">New Karachi Pakistan</p>
                             <div className="d-flex align-items-center gap-2">

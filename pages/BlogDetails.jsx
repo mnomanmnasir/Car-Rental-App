@@ -6,9 +6,18 @@ import Helmet from '../components/Helmet/Helmet';
 import commentImg from '../assests/all-images/ava-1.jpg'
 import '../styles/blog-details.css'
 import { Link } from 'react-router-dom'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const BlogDetails = () => {
+
+    useEffect(() => {
+
+        AOS.init({
+            duration: 950,
+        });
+    })
 
     const { slug } = useParams();
     const blog = blogData.find(blog => blog.title === slug)
@@ -24,9 +33,12 @@ const BlogDetails = () => {
                     <Row>
                         <Col lg='8' md='8'>
                             <div className="blog_details">
-                                <img src={blog.imgUrl} alt="" className='w-100' />
-                                <h2 className="section_title mt-4">{blog.title}</h2>
-                                <div className="blog_publisher d-flex align-items-center gap-4 mb-4">
+                                <img src={blog.imgUrl} alt="" className='w-100' data-aos="fade-right"
+                                    data-aos-delay="100" data-aos-easing="ease-out-cubic" />
+                                <h2 className="section_title mt-4" data-aos="fade-right"
+                                    data-aos-delay="100" data-aos-easing="ease-out-cubic" >{blog.title}</h2>
+                                <div data-aos="fade-right"
+                                    data-aos-delay="100" data-aos-easing="ease-out-cubic" className="blog_publisher d-flex align-items-center gap-4 mb-4">
                                     <span className="blog_author">
                                         <i className="ri-user-line"></i>{blog.author}
                                     </span>
@@ -37,17 +49,25 @@ const BlogDetails = () => {
                                         <i className="ri-time-line"></i>{blog.time}
                                     </span>
                                 </div>
-                                <p className="section_description">{blog.description}</p>
+
+                                <p data-aos="fade-right"
+                                    data-aos-delay="100" data-aos-easing="ease-out-cubic" className="section_description">{blog.description}</p>
 
                                 <h6 className="ps-5 fw-normal">
-                                    <blockquote className='fs-4'>{blog.quote}</blockquote>
+                                    <blockquote data-aos="fade-right"
+                                        data-aos-delay="300" data-aos-easing="ease-out-cubic" className='fs-4'>{blog.quote}</blockquote>
                                 </h6>
-                                <p className="section_description">{blog.description}</p>
+                                <p data-aos="fade-right"
+                                    data-aos-delay="400" data-aos-easing="ease-out-cubic" className="section_description">{blog.description}</p>
                             </div>
                             <div className="comment_list mt-5">
-                                <h4 className="mb-5">3 Comments</h4>
+                                <h4 className="mb-5" data-aos="fade-right"
+                                    data-aos-delay="400" data-aos-easing="ease-out-cubic">3 Comments</h4>
 
-                                <div className="single_comment d-flex gap-3">
+                                <div className="single_comment d-flex gap-3"
+                                    data-aos="fade-right"
+                                    data-aos-delay="400" data-aos-easing="ease-out-cubic"
+                                >
                                     <img src={commentImg} alt="" />
                                     <div className="comment_content">
                                         <h6 className='fw-bold'>Noman Nasir</h6>
@@ -61,12 +81,15 @@ const BlogDetails = () => {
                                 </div>
 
                                 <div className="leave_comment-form mt-5">
-                                    <h4>Leave a Comment</h4>
-                                    <p className="section_description">
+                                    <h4 data-aos="fade-right"
+                                        data-aos-delay="400" data-aos-easing="ease-out-cubic">Leave a Comment</h4>
+                                    <p data-aos="fade-right"
+                                        data-aos-delay="600" data-aos-easing="ease-out-cubic" className="section_description">
                                         You must sign-in to make or comment a post
                                     </p>
 
-                                    <Form>
+                                    <Form data-aos="fade-right"
+                                        data-aos-delay="300" data-aos-easing="ease-out-cubic">
                                         <FormGroup className='d-flex gap-3'>
                                             <Input type="text" placeholder='Full Name' />
                                             <Input type="email" placeholder='Email' />
@@ -82,11 +105,12 @@ const BlogDetails = () => {
                         </Col>
 
                         <Col lg='4' md='4'>
-                        <div className="recent_post mb-4">
-                            <h5 className="fw-bold">
-                                Recent Posts
-                            </h5>
-                        </div>
+                            <div data-aos="fade-left"
+                                data-aos-delay="400" data-aos-easing="ease-out-cubic" className="recent_post mb-4">
+                                <h5 className="fw-bold">
+                                    Recent Posts
+                                </h5>
+                            </div>
                             {
                                 blogData.map((item) => (
                                     <div className="recent_blog-post mb-4" key={item.id}>

@@ -4,10 +4,13 @@
     padding-bottom: 15px;
 }
 
-.footer_logo i {
-    color: #fff;
-    font-weight: 600;
+.logo h1 a img {
+    width: 5rem;
+    height: 5rem;
+    margin-top: -5px;
+    margin-left: -2%;
 }
+
 
 .footer_logo span {
     color: #fff
@@ -16,6 +19,7 @@
 .footer_logo-content {
     color: rgba(255, 255, 255, 0.715);
     margin-top: 15px;
+    margin-left: -7px;
     line-height: 30px;
 }
 

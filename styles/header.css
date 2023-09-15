@@ -44,15 +44,18 @@
 /* ----- header middle ------ */
 
 .header_middle {
-    padding: 20px 0px;
+    padding: 5px;
 }
 
 .logo h1 a span {
     font-size: 1.5rem;
 }
 
-.logo h1 a i {
-    font-size: 2.2rem;
+.logo h1 a img {
+    width: 5rem;
+    height: 5rem;
+    margin-top: -5px;
+    margin-left: -2%;
 }
 
 .logo h1 a {
@@ -171,11 +174,12 @@
     .nav_right {
         display: none;
     }
-    .mobile_menu{
+
+    .mobile_menu {
         display: block;
     }
 
-    .navigation{
+    .navigation {
         background: rgb(0, 13, 107, 0.6);
         width: 100%;
         height: 100%;
@@ -185,7 +189,8 @@
         z-index: 9999;
         display: none;
     }
-    .menu{
+
+    .menu {
         width: 250px;
         height: 100%;
         background: #fff;
@@ -201,7 +206,8 @@
         font-weight: 600;
         font-size: 0.9rem;
     }
-    .menu_active{
+
+    .menu_active {
         display: block;
     }
 }

@@ -5,9 +5,18 @@ import Helmet from '../components/Helmet/Helmet'
 import { useParams } from 'react-router-dom'
 import BookingForm from '../components/ProductCard/BookingForm'
 import PaymentMethod from '../components/ProductCard/PaymentMethod'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const CartDetails = () => {
+
+    useEffect(() => {
+
+        AOS.init({
+            duration: 950,
+        });
+    })
 
     const { slug } = useParams();
     const singleCarItem = carData.find((item) => item.carName === slug)
@@ -24,11 +33,13 @@ const CartDetails = () => {
                 <Container>
                     <Row>
                         <Col lg='6'>
-                            <img src={singleCarItem.imgUrl} alt="" className='w-100' />
+                            <img src={singleCarItem.imgUrl} alt="" className='w-100' data-aos="fade-right"
+                                data-aos-delay="300" data-aos-easing="ease-out-cubic" />
                         </Col>
 
                         <Col lg='6'>
-                            <div className="car_info">
+                            <div data-aos="fade-left"
+                                data-aos-delay="300" data-aos-easing="ease-out-cubic" className="car_info">
                                 <h2 className='section_title'>{singleCarItem.carName}</h2>
                                 <div className="d-flex align-items-center gap-5 mb-4 mt-3">
                                     <h6 className="rent_price mt-2 fw-bold fs-4">${singleCarItem.price}.00 / Day</h6>
@@ -79,7 +90,8 @@ const CartDetails = () => {
                         </Col>
 
                         <Col lg='7' className='mt-5'>
-                            <div className="booking_info mt-5">
+                            <div data-aos="fade-right"
+                                data-aos-delay="300" data-aos-easing="ease-out-cubic" className="booking_info mt-5">
                                 <h5 className='mb-4 fw-bold'>
                                     Booking Information
                                 </h5>
@@ -88,7 +100,8 @@ const CartDetails = () => {
                         </Col>
 
                         <Col lg='5' className='mt-5'>
-                            <div className="payment_info mt-5">
+                            <div data-aos="fade-left"
+                                data-aos-delay="600" data-aos-easing="ease-out-cubic" className="payment_info mt-5">
                                 <h5 className='mb-4 fw-bold'>
                                     Payment Information
                                 </h5>

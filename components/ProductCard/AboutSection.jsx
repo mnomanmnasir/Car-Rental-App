@@ -1,9 +1,25 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Container, Row, Col } from 'reactstrap'
 import '../../styles/about-section.css'
 import aboutImg from '../../assests/all-images/cars-img/bmw-offer.png'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+
+
 
 const AboutSection = ({ aboutClass }) => {
+
+
+    useEffect(() => {
+
+        AOS.init({
+            duration: 950,
+        });
+    })
+
+
+
     return (
         <section className='about_section' style={aboutClass === 'aboutPage' ?
             { marginTop: "30px" } : { marginTop: "300px" }
@@ -13,7 +29,8 @@ const AboutSection = ({ aboutClass }) => {
                 <Row>
 
                     <Col lg='6' md='6'>
-                        <div className="about_section-content">
+                        <div data-aos="fade-right"
+                            data-aos-delay="300" data-aos-easing="ease-out-cubic" className="about_section-content">
                             <h4 className="section_subtitle">
                                 About Us
                             </h4>
@@ -55,7 +72,8 @@ const AboutSection = ({ aboutClass }) => {
 
                     <Col lg='6' md='6'>
 
-                        <div className="about_img">
+                        <div data-aos="fade-left"
+                            data-aos-delay="500" data-aos-easing="ease-out-cubic" className="about_img">
                             <img src={aboutImg} alt="" className='w-100' />
                         </div>
 
