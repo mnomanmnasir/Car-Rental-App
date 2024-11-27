@@ -1,0 +1,14 @@
+.social_link-icon {
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: 500;
+    color: #fff;
+    background: #000d6b;
+    border-radius: 50%;
+}
+
+
+.social_link-icon:hover {
+   color: aqua;
+
+}
