@@ -4,8 +4,8 @@ import CommonSection from '../components/ProductCard/CommonSection';
 import { Container, Row, Col, Form, FormGroup, Input } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import '../styles/contact.css'
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
 
 
 
